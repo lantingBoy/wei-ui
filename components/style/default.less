@@ -1,0 +1,79 @@
+//样式参考ant-mobile、vant
+
+@base-color: #3dbdaf; //基本颜色
+// @base-color: #80D0C7; //基本颜色
+@base-border-color: #ebedf0;
+@base-border-radius: 5px;
+@base-text-color: #323233;
+@base-text-disabled: #c8c9cc;
+@base-text-label-color: #969799;
+
+@warning-color: #ff976a; //警告颜色
+
+@tabs-text-color: #646566;
+
+@loading-color: #c8c9cc;
+@loading-text-color: @base-text-label-color;
+@border-width-base: 1px;
+
+@navbar-height: 47px;
+@navbar-text-color: #1989fa;
+
+@timeline-line-color: #dcdee3;
+@timeline-dot-color: #80d0c780;
+@timeline-dot-boder-color: #80d0c733;
+@timeline-content-color: #666;
+@timeline-time-color: @base-text-label-color;
+
+@tree-select-nav-bg: #f7f8fa;
+
+@popup-overlay-bg: rgba(0, 0, 0, 0.7);
+
+
+[class*='sty-hairline']::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid #ebedf0;
+  transform: scale(0.5);
+}
+
+.sty-hairline {
+
+  &,
+  &--top,
+  &--left,
+  &--right,
+  &--bottom,
+  &--surround,
+  &--top-bottom {
+    position: relative;
+  }
+
+  &--top::after {
+    border-top-width: @border-width-base;
+  }
+
+  &--left::after {
+    border-left-width: @border-width-base;
+  }
+
+  &--right::after {
+    border-right-width: @border-width-base;
+  }
+
+  &--bottom::after {
+    border-bottom-width: @border-width-base;
+  }
+}
+
+.sty-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

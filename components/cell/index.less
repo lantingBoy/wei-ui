@@ -1,0 +1,18 @@
+@import '../style/default.less';
+
+@cellPrefixCls: wei-cell;
+
+.@{cellPrefixCls}{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: @base-text-color;
+  font-size: 14px;
+  &-title{
+    margin-right: 8px;
+  }
+  &-label{
+    color:@base-text-label-color;
+  }
+}
