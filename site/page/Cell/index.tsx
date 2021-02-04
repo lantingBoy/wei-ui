@@ -1,12 +1,12 @@
 import React from 'react';
-import { Cell } from '@/components/index';
+import { Cell } from '@/components';
 import './index.less';
 
 function CellDemo() {
   return (
     <div>
       <div className='demo-block__title'>基础用法</div>
-      <Cell title='标题' label='hellow这里是个人中心' center clickable>
+      <Cell title='标题' label='带点击反馈' center clickable>
         居中内容
       </Cell>
       <Cell title='标题'>

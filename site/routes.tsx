@@ -13,6 +13,8 @@ const LoadingDemo = asyncComponent(() => import('./page/Loading'));
 
 const CellDemo = asyncComponent(() => import('./page/Cell'));
 
+const IconDemo = asyncComponent(() => import('./page/Icon'));
+
 let routes: RouteConfig[] = [
   {
     path: '/',
@@ -34,6 +36,10 @@ let routes: RouteConfig[] = [
   {
     path: '/cell',
     component: CellDemo
+  },
+  {
+    path: '/icon',
+    component: IconDemo
   }
 ];
 // 用div将懒加载的代码包裹起来，防止路由动画不起作用

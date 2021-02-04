@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["site/**/*", "@types/*", "components/*"], // 需要编译的文件目录
+  "include": ["src/**/*", "@types/*", "components/*"], // 需要编译的文件目录
   "exclude": ["node_modules", "build", "public", "mock"] // 排除编译的文件目录
 }
